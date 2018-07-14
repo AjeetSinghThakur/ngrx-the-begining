@@ -21,6 +21,7 @@ import { UserModule } from './user/user.module';
 /* Ngrx */
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     UserModule,
     AppRoutingModule,
     StoreModule.forRoot({}),
+    EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({
       name: 'Ngrx the begining',
       maxAge: 25,
