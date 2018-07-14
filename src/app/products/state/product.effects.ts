@@ -14,8 +14,8 @@ export class ProductEffects {
     @Effect()
     loadProducts$ = this.actions$.pipe(
         ofType(productActions.ProductActionTypes.Load),
-        mergeMap((action:productActions.Load) => this.productService.getProducts().pipe(
-            map((products:Product[]) => (new productActions.LoadSuccess(products)))
+        mergeMap((action: productActions.Load) => this.productService.getProducts().pipe(
+            map((products: Product[]) => (new productActions.LoadSuccess(products)))
         ))
-    )
+    );
 }
