@@ -1,15 +1,16 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
+
 import { AuthService } from './auth.service';
-import { takeWhile } from 'rxjs/internal/operators/takeWhile';
+
+import { takeWhile } from 'rxjs/operators';
 
 /* NgRx */
 import { Store, select } from '@ngrx/store';
-import * as fromUser from './state/user.reducer';
+import * as fromUser from './state';
 import * as userActions from './state/user.actions';
 import * as fromRoot from '../state/app.state';
-
 
 @Component({
   templateUrl: './login.component.html',
