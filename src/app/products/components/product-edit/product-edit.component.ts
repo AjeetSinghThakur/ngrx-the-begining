@@ -9,13 +9,11 @@ import {
   SimpleChanges
 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Observable, of } from 'rxjs';
 
 import { Product } from '../../product';
 import { GenericValidator } from '../../../shared/generic-validator';
 import { NumberValidators } from '../../../shared/number.validator';
 
-import { takeWhile } from 'rxjs/operators';
 
 @Component({
   selector: 'pm-product-edit',
