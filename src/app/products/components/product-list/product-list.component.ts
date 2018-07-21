@@ -28,5 +28,4 @@ export class ProductListComponent {
   productSelected(product: Product): void {
     this.selected.emit(product);
   }
-
 }
